@@ -12,7 +12,7 @@ Binary API Mendoza
 
 Bundle API Mendoza (Trae IPS directamente)
 
-Presntación en :
+Presentación en :
 
   https://github.com/carlosam10/ips_mendoza/blob/master/Presentacion_IPS_Mendoza.pdf
 
