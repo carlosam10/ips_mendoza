@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "0fcf6d9d-4a10-4671-955b-9c670faa454a",
+		"name": "Msal-Fhir",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DocumentReference API Mendoza",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apisalud.mendoza.gov.ar/api/ips/fhir/DocumentReference?subject:identifier=http://salud.mendoza.gov.ar|752548",
+					"protocol": "https",
+					"host": [
+						"apisalud",
+						"mendoza",
+						"gov",
+						"ar"
+					],
+					"path": [
+						"api",
+						"ips",
+						"fhir",
+						"DocumentReference"
+					],
+					"query": [
+						{
+							"key": "subject:identifier",
+							"value": "http://salud.mendoza.gov.ar|752548"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Binary API Mendoza",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jwt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apisalud.mendoza.gov.ar/api/ips/fhir/Binary/752548",
+					"protocol": "https",
+					"host": [
+						"apisalud",
+						"mendoza",
+						"gov",
+						"ar"
+					],
+					"path": [
+						"api",
+						"ips",
+						"fhir",
+						"Binary",
+						"752548"
+					]
+				},
+				"description": "Solicitud de Binary a Dominio Mza"
+			},
+			"response": []
+		},
+		{
+			"name": "2_patient-location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://testapp.hospitalitaliano.org.ar/masterfile-federacion-service/fhir/Patient/$patient-location?identifier=http://salud.mendoza.gov.ar|752548",
+					"protocol": "https",
+					"host": [
+						"testapp",
+						"hospitalitaliano",
+						"org",
+						"ar"
+					],
+					"path": [
+						"masterfile-federacion-service",
+						"fhir",
+						"Patient",
+						"$patient-location"
+					],
+					"query": [
+						{
+							"key": "identifier",
+							"value": "http://salud.mendoza.gov.ar|752548"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3_DocumentReference ",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jwt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://mhd.sisa.msal.gov.ar/fhir/DocumentReference?subject:identifier=http://salud.mendoza.gov.ar|752548&custodian=http://salud.mendoza.gov.ar",
+					"protocol": "http",
+					"host": [
+						"mhd",
+						"sisa",
+						"msal",
+						"gov",
+						"ar"
+					],
+					"path": [
+						"fhir",
+						"DocumentReference"
+					],
+					"query": [
+						{
+							"key": "subject:identifier",
+							"value": "http://salud.mendoza.gov.ar|752548"
+						},
+						{
+							"key": "custodian",
+							"value": "http://salud.mendoza.gov.ar"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4_Solicitud de Binary a Dominio Mza",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jwt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apisalud.mendoza.gov.ar/api/ips/fhir/Binary/752548",
+					"protocol": "https",
+					"host": [
+						"apisalud",
+						"mendoza",
+						"gov",
+						"ar"
+					],
+					"path": [
+						"api",
+						"ips",
+						"fhir",
+						"Binary",
+						"752548"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bundle API Mendoza",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "apisalud.mendoza.gov.ar/api/ips/fhir/Bundle/752548",
+					"host": [
+						"apisalud",
+						"mendoza",
+						"gov",
+						"ar"
+					],
+					"path": [
+						"api",
+						"ips",
+						"fhir",
+						"Bundle",
+						"752548"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": []
+}
