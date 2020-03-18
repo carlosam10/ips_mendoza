@@ -16,6 +16,10 @@ Presentación en :
 
   https://github.com/carlosam10/ips_mendoza/blob/master/Presentacion_IPS_Mendoza.pdf
 
+Video de la Charla:
+
+  https://drive.google.com/file/d/1xINFlIcmqMtIzs1WmceP7SffCm4hECIG/view?usp=sharing
+
 Consultas al mail : 
 
 prof.carlos.a.martinez@gmail.com
